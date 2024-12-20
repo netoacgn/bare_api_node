@@ -4,7 +4,7 @@ module.exports = [
     name: 'Antonio'
   },
   {
-    id: 3,
+    id: 2,
     name: 'Maria'
   },
   {
