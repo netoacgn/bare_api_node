@@ -18,9 +18,8 @@ const server = http.createServer((request, response) => {
     id = splitEndpoint[1];
   }
 
-
   const route = routes.find((routeObj) => (
-    routeObj.endpoint === pathname && routeObj.method === 'GET'
+    routeObj.endpoint === pathname && routeObj.method === request.method
   ))
 
   if (route) {
